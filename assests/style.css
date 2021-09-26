@@ -140,6 +140,47 @@ nav a {
 nav a:hover {
 
 }
+
+#about-me {
+    color:rgb(7, 91, 247);
+    font-weight: bold;
+    font-size: 32px;
+    float: right;
+    text-decoration: underline;
+    text-shadow:
+    0 0 7px #fff, 
+    0 0 10px #ff00bf, 
+    0 0 21px #ff00bf, 
+    0 0 41px #ff009d, 
+    0 0 82px #ff009d;
+}
+
+#current-work {
+    color: black;
+    font-weight: bold;
+    font-size: 32px;
+    float: left;
+    text-decoration: underline;
+    text-shadow:
+    0 0 7px #fff, 
+    0 0 10px #ff00bf, 
+    0 0 21px #ff00bf, 
+    0 0 41px #ff009d, 
+    0 0 82px #ff009d;
+}
+
+#contact-me {
+    color: white;
+    font-size: 24px;
+    text-decoration: underline;
+    text-shadow:
+    0 0 7px #fff, 
+    0 0 10px #ff00bf, 
+    0 0 21px #ff00bf, 
+    0 0 41px #ff009d, 
+    0 0 82px #ff009d;
+}
+
 footer ul {
     color: rgb(7, 91, 247);
 }
