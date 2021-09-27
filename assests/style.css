@@ -55,15 +55,17 @@ h1 {
 
 article {
     background-image:url(./images/2560x1440-blue-grid-4k_1616870954.jpg);
+    border-radius: 25px;
     width: 95vw;
     margin-left: 40px;
     padding: 20px;
 }
 
 section {
-    background: url();
+    background: url(./images/teahub.io-star-wars-moving-wallpaper-927112.png);
+    border-radius: 25px;
     width: 95vw;
-    margin-right: 40px;
+    margin-left: 40px;
     padding: 20px;
 }
 
@@ -146,7 +148,7 @@ nav ul {
 }
 
 nav a {
-    color: rgb(7, 91, 247);
+    color: rgb(2, 0, 138);
     font-weight: bold;
     text-decoration: none;
 }
@@ -189,15 +191,12 @@ nav a:hover {
     text-decoration: underline;
     text-shadow:
     0 0 7px #fff, 
-    0 0 10px #ff00bf, 
-    0 0 21px #ff00bf, 
-    0 0 41px #ff009d, 
-    0 0 82px #ff009d;
+    0 0 10px #fcba05, 
+    0 0 21px #fcba05, 
+    0 0 41px #fcae05e8, 
+    0 0 82px #fcae05e8;
 }
 
-footer ul {
-    color: rgb(7, 91, 247);
-}
 footer content {
     display: flex;
     justify-content: space-evenly;
@@ -208,14 +207,30 @@ footer content {
     font-weight: bold;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+footer a {
+    color: rgb(1, 0, 85);
+}
 
-@font-face{
-    font-family: retrofuturism;
-    src: url('./fonts/Retrofuturism.otf');
-    src: url('./fonts/Retrofuturism.otf?#iefix') format('embedded-opentype'),
-         url('./fonts/Retrofuturism.woff2') format('woff2'),
-         url('./fonts/Retrofuturism.ttf') format('truetype'),
-         url('./fonts/Retrofuturism.svg#retrofuturism') format('svg');
-    font-weight: normal;
-    font-style: normal;
+.box {
+    width: 95%;
+    height: 95%;
+    box-shadow: 0 0 1rem 0 rgba(0,0,0,.2);
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+}
+
+.box::before {
+    content: "";
+    position:absolute;
+    background:inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255,.5);
+    filter: blur(2px);
+    margin: -200px;
 }
