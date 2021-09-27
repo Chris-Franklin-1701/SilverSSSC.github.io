@@ -53,6 +53,20 @@ h1 {
     width: 60vw;
 }
 
+article {
+    background-image:url(./images/2560x1440-blue-grid-4k_1616870954.jpg);
+    width: 95vw;
+    margin-left: 40px;
+    padding: 20px;
+}
+
+section {
+    background: url();
+    width: 95vw;
+    margin-right: 40px;
+    padding: 20px;
+}
+
 .neontext {
     display: flex;
     color: rgb(0, 0, 0);
