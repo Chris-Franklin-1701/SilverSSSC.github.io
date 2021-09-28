@@ -1,3 +1,17 @@
+.background {
+    width: 100vw;
+    height: 100vh;
+    box-shadow: 0 0 1rem 0 rgba(0,0,0,.2);
+    position: absolute;
+    z-index: 1;
+    background: inherit;
+    overflow: scroll;
+    overflow-y: auto;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
 body {
     position: absolute;
     background: url(./images/wallpaperflare.com_wallpaper.jpg) no-repeat;
@@ -10,33 +24,6 @@ body {
     height: 100vh;
 }
 
-.background {
-    width: 100vw;
-    height: 100vh;
-    box-shadow: 0 0 1rem 0 rgba(0,0,0,.2);
-    position: absolute;
-    z-index: 1;
-    background: inherit;
-    overflow: scroll;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-}
-
-.background::before {
-    content: "";
-    position:absolute;
-    background:inherit;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    box-shadow: inset 0 0 2000px rgba(255, 255, 255,.5);
-    filter: blur(2px);
-    margin: -200px;
-}
-
 header {
     display: flex;
     justify-content: space-between;
@@ -45,6 +32,7 @@ header {
     background: transparent;
     color: white;
     height: 125px;
+    margin-bottom: 940px;
 }
 
 h1 {
@@ -80,6 +68,7 @@ article {
     margin-left: 40px;
     padding: 20px;
     display: column;
+    margin-bottom: 400px;
 }
 
 article header {
@@ -122,6 +111,7 @@ section {
     margin-left: 40px;
     padding: 20px;
     color: #32A956;
+    margin-bottom: 100px;
 }
 
 section header {
@@ -156,6 +146,10 @@ section a {
     width: 100%;
 }
 
+footer {
+    display: flex;
+    margin-bottom: 69px;
+}
 footer content {
     display: flex;
     justify-content: space-evenly;
@@ -291,6 +285,7 @@ footer a {
 
 #latest-project {
     flex: 0 0 80%;
+    margin-right: 117px;
 }
 
 .steve img {
@@ -338,6 +333,11 @@ footer a {
         align-content: space-between;
         padding: 30px;
     }
+
+    section {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
     
     footer content {
         flex-direction: column;
@@ -352,6 +352,11 @@ footer a {
         flex-direction: column;
         padding: 30px;
         max-width: 100vw;
+    }
+
+    section {
+        flex-direction: column;
+        flex-wrap: nowrap;
     }
     
     footer content {
