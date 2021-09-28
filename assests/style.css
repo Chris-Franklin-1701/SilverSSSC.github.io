@@ -1,7 +1,9 @@
 body {
+    position: absolute;
     background: url(./images/wallpaperflare.com_wallpaper.jpg) no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover;
+    background-position: center center;
     display: grid;
     align-items: center;
     justify-content: center;
@@ -12,10 +14,10 @@ body {
     width: 100vw;
     height: 100vh;
     box-shadow: 0 0 1rem 0 rgba(0,0,0,.2);
-    position: relative;
+    position: absolute;
     z-index: 1;
     background: inherit;
-    overflow: hidden;
+    overflow: scroll;
     display: grid;
     align-items: center;
     justify-content: center;
@@ -52,6 +54,24 @@ h1 {
     width: 60vw;
 }
 
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+    text-shadow:
+    0 0 7px #fff, 
+    0 0 10px #ff00bf, 
+    0 0 21px #ff00bf, 
+    0 0 41px #ff009d, 
+    0 0 82px #ff009d;
+}
+
+nav a {
+    color: rgb(2, 0, 138);
+    font-weight: bold;
+    text-decoration: none;
+}
+
 article {
     display: block;
     background-image:url(./images/2560x1440-blue-grid-4k_1616870954.jpg);
@@ -64,6 +84,28 @@ article {
 
 article header {
     display: block;
+}
+
+article img {
+    max-height: 300px;
+    max-width: 300px;
+    margin: 10px;
+}
+
+article h2 {
+    margin-bottom: 20px;
+    color:rgb(7, 91, 247);
+    font-weight: bold;
+    font-size: 32px;
+    padding: 20px 20px 20px 0px;
+    align-items: start;
+    text-decoration: underline;
+    text-shadow:
+    0 0 7px #fff, 
+    0 0 10px #ff00bf, 
+    0 0 21px #ff00bf, 
+    0 0 41px #ff009d, 
+    0 0 82px #ff009d;
 }
 
 article p {
@@ -83,11 +125,49 @@ section {
 }
 
 section header {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section h2 {
+    color: black;
+    margin-top: 40px;
+    margin-bottom: 927px;
+    font-weight: bold;
+    font-size: 32px;
+    float: left;
+    text-decoration: underline;
+    text-shadow:
+    0 0 7px #fff, 
+    0 0 10px #ff00bf, 
+    0 0 21px #ff00bf, 
+    0 0 41px #ff009d, 
+    0 0 82px #ff009d;
 }
 
 section ul {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+section a {
+    width: 100%;
+}
+
+footer content {
+    display: flex;
+    justify-content: space-evenly;
+    background: transparent;
+    width: 100vw;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+footer a {
+    color: rgb(1, 0, 85);
 }
 
 .neontext {
@@ -156,64 +236,6 @@ section ul {
     }
 }
 
-nav ul {
-    display: flex;
-    justify-content: space-between;
-    min-width: 300px;
-    text-shadow:
-    0 0 7px #fff, 
-    0 0 10px #ff00bf, 
-    0 0 21px #ff00bf, 
-    0 0 41px #ff009d, 
-    0 0 82px #ff009d;
-}
-
-nav a {
-    color: rgb(2, 0, 138);
-    font-weight: bold;
-    text-decoration: none;
-}
-
-nav a:hover {
-
-}
-
-article h2 {
-    margin-bottom: 20px;
-    color:rgb(7, 91, 247);
-    font-weight: bold;
-    font-size: 32px;
-    padding: 20px 20px 20px 0px;
-    align-items: start;
-    text-decoration: underline;
-    text-shadow:
-    0 0 7px #fff, 
-    0 0 10px #ff00bf, 
-    0 0 21px #ff00bf, 
-    0 0 41px #ff009d, 
-    0 0 82px #ff009d;
-}
-
-section h2 {
-    color: black;
-    font-weight: bold;
-    font-size: 32px;
-    float: left;
-    text-decoration: underline;
-    text-shadow:
-    0 0 7px #fff, 
-    0 0 10px #ff00bf, 
-    0 0 21px #ff00bf, 
-    0 0 41px #ff009d, 
-    0 0 82px #ff009d;
-}
-
-article img {
-    max-height: 300px;
-    max-width: 300px;
-    margin: 10px;
-}
-
 #contact-me {
     color: white;
     font-size: 24px;
@@ -224,20 +246,6 @@ article img {
     0 0 21px #fcba05, 
     0 0 41px #fcae05e8, 
     0 0 82px #fcae05e8;
-}
-
-footer content {
-    display: flex;
-    justify-content: space-evenly;
-    background: transparent;
-    width: 100vw;
-    text-align: center;
-    font-size: 18px;
-    font-weight: bold;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-footer a {
-    color: rgb(1, 0, 85);
 }
 
 .box {
@@ -269,4 +277,87 @@ footer a {
 .float-right {
     float: right;
     margin-left: 25px;
+}
+
+.steve {
+    position: relative;
+    flex: 0 0 20%;
+    padding: 10px;
+    text-align: left;
+    border-radius: 25px;
+    box-shadow: #32A956 5px;
+    min-width: 400px
+}
+
+#latest-project {
+    flex: 0 0 80%;
+}
+
+.steve img {
+    width: 100%;
+    min-width: 400px;
+}
+
+.steve:hover img {
+    opacity: 0.3;
+}
+
+.steve:hover .cheryl {
+    opacity: 1;
+}
+
+.cheryl p {
+    background-attachment: black;
+    color: #32A956;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+
+.cheryl {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    background: black;
+    border: solid;
+    border-color: #32A956;
+}
+
+@media screen and (max-width: 768px) {
+    header,
+    nav {
+        display: block;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-content: space-between;
+        padding: 30px;
+    }
+    
+    footer content {
+        flex-direction: column;
+    }
+    .box {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    body {
+        flex-direction: column;
+        padding: 30px;
+        max-width: 100vw;
+    }
+    
+    footer content {
+        flex-direction: column;
+    }
+    .box {
+        width: 100vw;
+    }
 }
