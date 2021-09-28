@@ -29,7 +29,6 @@ body::before {
 }
 
 body {
-    position: absolute;
     background: url(./images/wallpaperflare.com_wallpaper.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
