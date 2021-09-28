@@ -15,7 +15,6 @@
 body {
     position: absolute;
     background: url(./images/wallpaperflare.com_wallpaper.jpg) no-repeat;
-    background-attachment: scroll;
     background-size: cover;
     background-position: center center;
     display: grid;
