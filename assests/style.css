@@ -12,22 +12,6 @@
     justify-content: center;
 }
 
-body::before {
-    content: "";
-    display: block;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -10;
-    background: url(./images/wallpaperflare.com_wallpaper.jpg) no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
 body {
     background: url(./images/wallpaperflare.com_wallpaper.jpg) no-repeat;
     background-size: cover;
@@ -304,7 +288,7 @@ footer a {
 
 .steve img {
     width: 100%;
-    min-width: 400px;
+    min-width: 300px;
 }
 
 .steve:hover img {
@@ -348,9 +332,14 @@ footer a {
         padding: 30px;
     }
 
+    article {
+        margin-left: 12px;
+    }
+
     section {
         flex-direction: column;
         flex-wrap: nowrap;
+        margin-left: 19px;
     }
     
     footer content {
@@ -364,8 +353,6 @@ footer a {
 @media screen and (max-width: 468px) {
     body {
         flex-direction: column;
-        padding: 30px;
-        max-width: 100vw;
     }
 
     section {
