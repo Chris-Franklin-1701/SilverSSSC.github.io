@@ -1,3 +1,4 @@
+/* Sets background for the entire page */ 
 .background {
     width: 100vw;
     height: 100vh;
@@ -11,7 +12,7 @@
     align-items: center;
     justify-content: center;
 }
-
+/* sets formatting for body of site */
 body {
     background: url(./images/wallpaperflare.com_wallpaper.jpg) no-repeat;
     background-size: cover;
@@ -21,7 +22,7 @@ body {
     justify-content: center;
     height: 100vh;
 }
-
+/* sets header to flex, and formats the base of the header section */
 header {
     display: flex;
     justify-content: space-between;
@@ -32,14 +33,14 @@ header {
     height: 125px;
     margin-bottom: 940px;
 }
-
+/* stylizes h1 within header */
 h1 {
     font-size: 45px;
     font-family: 'helvetica', 'consolas', 'Arial', sans-serif;
     height: 125px;
     width: 60vw;
 }
-
+/* adds glow effect to, and sets nav ul to flex */
 nav ul {
     display: flex;
     justify-content: space-between;
@@ -51,13 +52,13 @@ nav ul {
     0 0 41px #ff009d, 
     0 0 82px #ff009d;
 }
-
+/* sets font style values for nav a elements */
 nav a {
     color: rgb(2, 0, 138);
     font-weight: bold;
     text-decoration: none;
 }
-
+/* background image and styling for article base */
 article {
     display: block;
     background-image:url(./images/2560x1440-blue-grid-4k_1616870954.jpg);
@@ -68,17 +69,17 @@ article {
     display: column;
     margin-bottom: 400px;
 }
-
+/* sets article header to display: block */
 article header {
     display: block;
 }
-
+/* article img settings */
 article img {
     max-height: 300px;
     max-width: 300px;
     margin: 10px;
 }
-
+/* article h2 style and glow effect */
 article h2 {
     margin-bottom: 20px;
     color:rgb(7, 91, 247);
@@ -94,14 +95,14 @@ article h2 {
     0 0 41px #ff009d, 
     0 0 82px #ff009d;
 }
-
+/* article p element text color and indent */
 article p {
     display: block;
     color: #32A956;
     text-indent: 75px;
     
 }
-
+/* base formatting for section */
 section {
     background: url(./images/teahub.io-star-wars-moving-wallpaper-927112.png);
     border-radius: 25px;
@@ -111,18 +112,17 @@ section {
     color: #32A956;
     margin-bottom: 100px;
 }
-
+/* flex settings for section header */
 section header {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
 }
-
+/* section h2 styling and glow effect */
 section h2 {
     color: black;
     margin-top: 40px;
-    margin-bottom: 927px;
+    margin-bottom: 50px;
     font-weight: bold;
     font-size: 32px;
     float: left;
@@ -133,11 +133,6 @@ section h2 {
     0 0 21px #ff00bf, 
     0 0 41px #ff009d, 
     0 0 82px #ff009d;
-}
-
-section ul {
-    display: flex;
-    flex-wrap: wrap;
 }
 
 section a {
@@ -161,7 +156,7 @@ footer content {
 footer a {
     color: rgb(1, 0, 85);
 }
-
+/* added neon glow around site title, and font color */
 .neontext {
     display: flex;
     color: rgb(0, 0, 0);
@@ -272,23 +267,22 @@ footer a {
 }
 
 .steve {
+    display: flex;
     position: relative;
-    flex: 0 0 20%;
     padding: 10px;
     text-align: left;
     border-radius: 25px;
-    box-shadow: #32A956 5px;
     min-width: 400px
 }
 
 #latest-project {
-    flex: 0 0 80%;
-    margin-right: 117px;
+    width: 100%;
 }
 
 .steve img {
     width: 100%;
     min-width: 300px;
+    border-radius: 25px;
 }
 
 .steve:hover img {
@@ -341,6 +335,10 @@ footer a {
         flex-wrap: nowrap;
         margin-left: 19px;
     }
+
+    section h2 {
+        margin-bottom: 100px;
+    }
     
     footer content {
         flex-direction: column;
@@ -348,22 +346,68 @@ footer a {
     .box {
         width: 100%;
     }
+    .steve {
+        order: 2;
+    }
+    
+    #latest-project {
+        margin-right: 0px;
+    }
 }
 
 @media screen and (max-width: 468px) {
     body {
         flex-direction: column;
     }
-
+    
+    h1 {
+        font-size: 30px;
+        margin-left: 15px;
+    }
+    
+    article {
+        margin-left: 40px
+    }
     section {
+        margin-left: 40px;
         flex-direction: column;
         flex-wrap: nowrap;
     }
     
+    section header {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+    }
+    footer {
+        margin-left: 40px;
+    }
     footer content {
         flex-direction: column;
     }
     .box {
-        width: 100vw;
+        width: 100%;
+    }
+    h2 {
+        width: 100%;
+    }
+
+    section h2 {
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .steve {
+        width: 100%;
+        justify-content: space-around;
+    }
+    .steve img {
+        width: 68%;
+        min-width: 247px; 
+    }
+
+    #latest-project {
+        margin-right: -112px;
     }
 }
