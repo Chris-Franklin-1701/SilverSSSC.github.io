@@ -1,7 +1,7 @@
 # SilverSSSC.github.io
 The personal portfolio of Chris Franklin
 
-![Preview of the project](./assets/images/portfolio.png)
+![Preview of the project](./portfolio.png)
 
 
 ## Installation
