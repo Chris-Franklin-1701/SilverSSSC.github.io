@@ -14,7 +14,7 @@
 }
 /* sets formatting for body of site */
 body {
-    background: url(./images/wallpaperflare.com_wallpaper.jpg) no-repeat;
+    background: url("../images/wallpaperflare.com_wallpaper.jpg") no-repeat;
     background-size: cover;
     background-position: center center;
     display: grid;
@@ -31,7 +31,7 @@ header {
     background: transparent;
     color: white;
     height: 125px;
-    margin-bottom: 940px;
+    margin-bottom: 1180px;
 }
 /* stylizes h1 within header */
 h1 {
@@ -61,13 +61,13 @@ nav a {
 /* background image and styling for article base */
 article {
     display: block;
-    background-image:url(./images/2560x1440-blue-grid-4k_1616870954.jpg);
+    background-image:url(../images/2560x1440-blue-grid-4k_1616870954.jpg);
     border-radius: 25px;
     width: 95vw;
     margin-left: 40px;
     padding: 20px;
     display: column;
-    margin-bottom: 400px;
+    margin-bottom: 496px;
 }
 /* sets article header to display: block */
 article header {
@@ -104,9 +104,10 @@ article p {
 }
 /* base formatting for section */
 section {
-    background: url(./images/teahub.io-star-wars-moving-wallpaper-927112.png);
+    background: url(../images/teahub.io-star-wars-moving-wallpaper-927112.png);
     border-radius: 25px;
     width: 95vw;
+    height: 69vh;
     margin-left: 40px;
     padding: 20px;
     color: #32A956;
@@ -121,8 +122,6 @@ section header {
 /* section h2 styling and glow effect */
 section h2 {
     color: black;
-    margin-top: 40px;
-    margin-bottom: 50px;
     font-weight: bold;
     font-size: 32px;
     float: left;
@@ -410,4 +409,26 @@ footer a {
     #latest-project {
         margin-right: -112px;
     }
+}
+
+.carousel {
+    position: relative;  
+    width: 90vw;
+    height: 56vh;
+    perspective: 600px;
+}
+.carousel-pivot {
+    position: absolute;
+    left: 50%;
+    top: 50%; 
+    transform-style: preserve-3d;
+}
+.carousel-item {
+    position: absolute;
+    width: 241px;
+    height: 301px;
+    background: rgba(255, 0, 153, 0.8);
+    text-align: center;
+    line-height: 269px;
+    font-size: 20px;
 }
