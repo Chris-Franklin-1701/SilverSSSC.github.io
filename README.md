@@ -3,9 +3,9 @@ The personal portfolio of Chris Franklin
 
 ![Preview of the project](./portfolio.png)
 
-![Preview of the project](./portfolio2.png)
+![Preview of the project](./Portfolio 2.png)
 
-![Preview of the project](./portfolio3.png)
+![Preview of the project](./Portfolio3.png)
 
 
 ## Live Deployment
