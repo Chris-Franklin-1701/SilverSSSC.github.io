@@ -427,6 +427,14 @@ footer a {
     height: 301px;
     background: rgba(0, 0, 0, 0.8);
     text-align: center;
-    line-height: 269px;
+    line-height: 21px;
     font-size: 20px;
+}
+
+.carousel-item a {
+    color:chartreuse;
+}
+
+p a {
+    color: chartreuse;
 }

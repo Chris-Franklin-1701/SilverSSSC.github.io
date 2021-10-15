@@ -4,6 +4,10 @@ The personal portfolio of Chris Franklin
 ![Preview of the project](./portfolio.png)
 
 
+## Live Deployment
+
+https://silversssc.github.io/
+
 ## Installation
 
 Use git clone to clone this repository to your local drive
