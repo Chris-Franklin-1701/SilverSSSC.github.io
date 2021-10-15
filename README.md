@@ -12,6 +12,12 @@ The personal portfolio of Chris Franklin
 
 https://silversssc.github.io/
 
+##List of used technology:
+HTML5
+CSS
+JavaScript
+
+
 ## Installation
 
 Use git clone to clone this repository to your local drive
@@ -33,3 +39,7 @@ Please make sure to update tests as appropriate.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+
+## Contact
+CFrank306@gmail.com
+https://github.com/SilverSSSC
