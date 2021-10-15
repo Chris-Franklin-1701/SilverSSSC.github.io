@@ -12,6 +12,12 @@ The personal portfolio of Chris Franklin
 
 https://silversssc.github.io/
 
+##List of used technology:
+HTML5
+CSS
+JavaScript
+
+
 ## Installation
 
 Use git clone to clone this repository to your local drive
