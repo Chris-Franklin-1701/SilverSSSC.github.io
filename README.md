@@ -3,6 +3,10 @@ The personal portfolio of Chris Franklin
 
 ![Preview of the project](./portfolio.png)
 
+![Preview of the project](./portfolio2.png)
+
+![Preview of the project](./portfolio3.png)
+
 
 ## Live Deployment
 
