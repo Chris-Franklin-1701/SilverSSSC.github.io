@@ -24,6 +24,7 @@ git clone "insert repo"
 Background image: https://www.wallpaperflare.com/search?wallpaper=vaporwave
 Blur background source code: https://webdesign.tutsplus.com/tutorials/how-to-create-a-frosted-glass-effect-in-css--cms-32535
 Neon Text and animantion code: https://css-tricks.com/how-to-create-neon-text-with-css/
+Carousel: https://codepen.io/samuelpetersson/pen/QOgVMw
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
