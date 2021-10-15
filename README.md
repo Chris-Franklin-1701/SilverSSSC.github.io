@@ -3,7 +3,7 @@ The personal portfolio of Chris Franklin
 
 ![Preview of the project](./portfolio.png)
 
-![Preview of the project](./Portfolio 2.png)
+![Preview of the project](./Portfolio2.png)
 
 ![Preview of the project](./Portfolio3.png)
 
