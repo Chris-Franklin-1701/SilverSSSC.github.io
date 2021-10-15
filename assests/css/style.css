@@ -369,6 +369,7 @@ footer a {
         margin-left: 40px;
         flex-direction: column;
         flex-wrap: nowrap;
+        height: 98vh;
     }
     
     section header {
